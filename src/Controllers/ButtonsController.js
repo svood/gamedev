@@ -1,13 +1,11 @@
 import StartAnim from './AnimController';
 export default class ButtonsController {
-	constructor() {
-       this.start = new StartAnim();
+	constructor(props) {
+       this.props = props;
+       this.start = new StartAnim(props);
     }
     
- 
-
-    
-    StartBtn(app) {
+    StartBtn(app,store) {
         var textureButton = PIXI.Texture.from('assets/images/spin.png');
         var button = new PIXI.Sprite(textureButton);
         button.buttonMode = true;
@@ -20,7 +18,7 @@ export default class ButtonsController {
         button.interactive = true;
         button.buttonMode = true;
         button.on('pointerdown',() => {
-            this.start.AnimateReels(app);
+            this.start.AnimateReels(app,this.props);
         })
      
         return button;

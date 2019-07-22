@@ -1,10 +1,15 @@
 import Settings from '../settings';
+
+
+
 export default class ReelController {
-	constructor() {
+	constructor(props) {
+        this.props = props;
+      
         this.ReelsContainer = new PIXI.Container();
         this.ReelsContainer.x = 30;
         this.ReelsContainer.y = 50;
- 
+
     
         this.slotTextures = [
             PIXI.Texture.from('assets/images/1.png'),
@@ -20,8 +25,6 @@ export default class ReelController {
     }
 
     createReels() {
- 
-
         for (var i = 0; i < Settings().ReelsAmount;i++) {
             var new_reel =  new PIXI.Container();
 
