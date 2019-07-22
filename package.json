@@ -1,0 +1,32 @@
+{
+  "name": "dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "webpack-dev-server"
+  },
+  "author": "Bodya",
+  "license": "ISC",
+  "devDependencies": {
+    "redux-devtools-extension": "^2.13.8",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "dependencies": {
+    "array-foreach-async": "^1.0.1",
+    "babel-loader": "^8.0.6",
+    "babel-register": "^6.26.0",
+    "css-loader": "^3.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "image-webpack-loader": "^5.0.0",
+    "pixi-tween": "^0.2.0",
+    "pixi.js": "^5.0.4",
+    "pixi.js-legacy": "^5.0.4",
+    "redux": "^4.0.4",
+    "simple-async-foreach": "^0.1.4",
+    "style-loader": "^0.23.1"
+  }
+}
